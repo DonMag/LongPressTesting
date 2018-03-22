@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="azN-H2-atx">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="dFb-sx-0py">
+            <objects>
+                <viewController id="azN-H2-atx" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6ER-RE-v4B">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EBs-57-ehT">
+                                <rect key="frame" x="40" y="100" width="295" height="487"/>
+                                <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FBB-dU-Bs1">
+                                <rect key="frame" x="164" y="40" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="didTap:" destination="azN-H2-atx" eventType="touchUpInside" id="G7Z-za-xK4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="SON-VS-BWL" firstAttribute="bottom" secondItem="EBs-57-ehT" secondAttribute="bottom" constant="80" id="Dzw-4K-5qn"/>
+                            <constraint firstItem="SON-VS-BWL" firstAttribute="trailing" secondItem="EBs-57-ehT" secondAttribute="trailing" constant="40" id="NwW-8I-nmp"/>
+                            <constraint firstItem="EBs-57-ehT" firstAttribute="leading" secondItem="SON-VS-BWL" secondAttribute="leading" constant="40" id="O4K-rQ-3Ea"/>
+                            <constraint firstItem="EBs-57-ehT" firstAttribute="top" secondItem="SON-VS-BWL" secondAttribute="top" constant="80" id="YtH-Y1-7X2"/>
+                            <constraint firstItem="FBB-dU-Bs1" firstAttribute="top" secondItem="SON-VS-BWL" secondAttribute="top" constant="20" id="mIz-bV-MbJ"/>
+                            <constraint firstItem="FBB-dU-Bs1" firstAttribute="centerX" secondItem="6ER-RE-v4B" secondAttribute="centerX" id="p7y-Dz-CZk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="SON-VS-BWL"/>
+                    </view>
+                    <connections>
+                        <outlet property="contentView" destination="EBs-57-ehT" id="lZC-wP-nRh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yTH-8G-IAn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="871" y="92"/>
+        </scene>
+    </scenes>
+</document>
